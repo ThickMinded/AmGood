@@ -42,7 +42,7 @@ If you're looking for **clean, optimized code**, you are **in the wrong place**.
   - **Press A + S** on your keyboard.
   - If entered correctly, **AmGood will stop and exit**.
 
-(Good luck remembering that **while your screen is flashing** like a haunted computer.)
+(Good luck remembering that **while your screen is flashing** like a haunted computer. And also sometimes the program gets overloaded and doesn't accept any keybinds. So don't be suprised that the program doesn't close even if you pressed the sequence)
 
 ---
 
