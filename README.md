@@ -46,8 +46,75 @@ If you're looking for **clean, optimized code**, you are **in the wrong place**.
 
 ---
 
-## 🔧 What You Need to Run AmGood
-Since this program isn't designed for portability, you **must** install a few dependencies before running it.
+# How to Install and Use the Program
+
+Alright, listen up! This is my first time making software, so don’t come at me saying things are messy or incomplete. I know it’s not perfect, but I’ve included everything you need to run it. You’ll have to do a bit of work yourself because I didn’t provide a compiled JAR or a pre-packaged setup.
+
+---
+
+## What You’ll Need:
+1. **Java Development Kit (JDK)**:
+   - You need JDK 17 or higher. Download it from [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html) or [OpenJDK](https://openjdk.java.net/).
+   - Set up your environment variables (`JAVA_HOME`) and add the `bin` folder of the JDK to your system’s PATH. If you don’t know how to do that, Google it!
+NOTE: You can skip through step 2 and 3 if you downloaded the librarys package that i provided 
+2. **JavaFX SDK**:
+   - Download the JavaFX SDK from [Gluon](https://gluonhq.com/products/javafx/).
+   - Extract it somewhere. You’ll need the `lib` folder for compiling and running the program.
+
+3. **The Libraries**:
+   - I’ve included all the required JAR files in the project folder. These are the ones you’ll need:
+     - `javafx.base.jar`
+     - `javafx.controls.jar`
+     - `javafx.fxml.jar`
+     - `javafx.graphics.jar`
+     - `javafx.media.jar`
+     - `javafx.swing.jar`
+     - `javafx.web.jar`
+     - `jna-jpms-5.16.0.jar`
+     - `jna-platform-5.16.0.jar`
+     - `jnativehook-2.2.2.jar`
+   - Put all of these in a folder called `lib` inside the project directory. Don’t mess this up.
+
+4. **Other Files**:
+   - These files need to stay in the same directory as the compiled program:
+     - `Hamood.wav`
+     - `meow.wav`
+     - `test.mp4`
+     - `you are an idiot!.mp4`
+     - `heheicon.ico`
+
+---
+
+## How to Set It Up:
+1. **Get the Files**:
+   - Download everything and dump it into one folder, like `C:\amGood`. No fancy organization is needed—just make sure you’ve got it all.
+
+2. **Organize the Libraries**:
+   - Create a folder named `lib` in the same directory and throw all the JAR files listed above into it.
+
+3. **Compile the Code**:
+   - Open Command Prompt, go to your project folder:
+     ```cmd
+     cd C:\amGood
+     ```
+   - Run this to compile the program:
+     ```cmd
+     javac --module-path lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web -d bin *.java
+     ```
+   - This will create a `bin` folder with all the compiled class files.
+
+4. **Run the Program**:
+   - To run it, use this command:
+     ```cmd
+     java --module-path lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web -cp bin hehehaMeow
+     ```
+   - If it doesn’t work, double-check that all files are where they’re supposed to be. If it still doesn’t work, well, I tried my best.
+
+---
+
+## Final Notes:
+I know this isn’t the cleanest setup, but hey, it works (at least for me). If you run into issues, feel free to scream into the void because I’m probably learning as much as you are. Enjoy!
+
 
 ### ✅ Required Installations
 1. **Java Development Kit (JDK) – Version 8 or Higher** 🛠️
